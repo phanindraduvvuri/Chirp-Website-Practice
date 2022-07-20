@@ -1,0 +1,379 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-blue: #3180f5;
+    --twitter-blue: #1da1f2;
+    --main-white: #fff;
+    --text-normal: #535251;
+    --main-bg: #fbf8f3;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: var(--text-normal);
+    overflow-x: hidden;
+
+}
+
+h1 {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--main-bg);
+    padding: 2rem 4rem;
+    min-height: 70px;
+}
+
+.logo {
+    font-weight: 700;
+    color: var(--main-blue);
+    font-style: italic;
+    text-decoration: none;
+    flex: 1;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.btn-twitter {
+    color: var(--main-white);
+    background-color: var(--twitter-blue);
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 786px) {
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navbar .btn-twitter {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        flex-direction: column;
+        background-color: var(--main-bg);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding-bottom: 20px;
+    }
+
+    .nav-links.active {
+        top: 70px;
+        left: 0;
+    }
+}
+
+.container-hero {
+    background-color: var(--main-bg);
+}
+
+#hero {
+    padding: 2rem 4rem 2rem 5rem;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    width: 1240px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#hero-content {
+    flex: 1.5;
+}
+
+#hero-content h1 {
+    font-size: 4rem;
+    margin-top: 4rem;
+    line-height: 1.25;
+}
+
+#hero-content p {
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+#hero-content .btn-twitter {
+    max-width: 250px;
+    display: inline-flex;
+}
+
+#hero-content .btn-secondary {
+    color: var(--main-blue);
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 1rem;
+    display: inline-block;
+}
+
+#hero-content em {
+    color: var(--main-blue);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+#hero-img {
+    margin-left: auto;
+    flex: 1;
+}
+
+#hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.avatar-container {
+    margin: 2rem 0;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
+
+#hero-content .avatar-image:not(:first-of-type) {
+    border: 2px solid var(--main-bg);
+    margin-left: -30px;
+}
+
+@media (max-width: 840px) {
+    #hero {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+}
+
+#features {
+    margin: 5rem 0;
+}
+
+.section-header {
+    color: black;
+    font-size: 3.4rem;
+    width: 95vw;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 95vw;
+    margin: 2rem auto;
+    gap: 4rem;
+}
+
+.feature-card {
+    border: 1px solid var(--text-normal);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.emoji-container {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-header {
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.feature-content {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 840px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.testimony-tweets {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+#testimonies {
+    background-color: #d7f5f5;
+    padding: 5rem;
+}
+
+.tweet-card {
+    background-color: white;
+    max-width: 350px;
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.tweet-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tweet-user {
+    flex: 1;
+}
+
+.tweet-user h4 {
+    color: black;
+    font-size: 1.7rem;
+}
+
+.tweet-user p {
+    font-size: 1.3rem;
+}
+
+.tweet-content {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.tweet-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-count {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .testimony-tweets {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+#pricing {
+    margin: 4rem auto;
+    text-align: center;
+}
+
+#pricing .section-header {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.price-card {
+    background-color: #fbf8f3;
+    max-width: 450px;
+    width: 100%;
+    margin: 3rem auto;
+    text-align: left;
+    padding: 3rem;
+    border: 1.5px solid #ffd286;
+    border-radius: 10px;
+}
+
+.price-frequency {
+    font-size: 2rem;
+}
+
+.price-amount {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+}
+
+.divider {
+    width: 100%;
+    height: 0;
+    border: 0.5px solid var(--text-normal);
+    margin: 1.5rem 0;
+}
+
+.price-card li {
+    background: url('../static/Checkmark.svg') left center no-repeat;
+    margin: 2rem 0;
+    list-style: none;
+    padding-left: 4rem;
+    min-height: 20px;
+}
+
+.price-card button {
+    margin: auto;
+}
+
+.price-card button::before {
+    content: url(../static/Twitter.svg);
+}
+
+footer {
+    display: flex;
+    padding: 3rem;
+    background-color: #d7f5f5;
+    gap: 2rem;
+    color: black;
+    font-weight: 600;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Chirp</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                Chirp.
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>FAQ</li>
+            </ul>
+            <button class="btn btn-twitter" href="#">
+                <img src="static/Twitter.svg" alt="twitter icons">
+                Sign in with Twitter
+            </button>
+
+            <!-- Hamburger Menu -->
+            <a href="javascript:void(0);" class="hamburger-menu" onclick="toggleMenu()">
+                <img src="static/Hamburger Menu.svg" alt="Hamburger menu icon">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-hero">
+            <section id="hero">
+                <article id="hero-content">
+                    <h1>Twitter analytics <br> taken to a whole new <br> level.</h1>
+                    <p>
+                        Chirp is suit of Twitter analytics that will help you better understand your audience, which
+                        tweets
+                        they like, and most importantly, when they are the most active on Twitter.
+                    </p>
+                    <button href="#" class="btn btn-twitter">
+                        <img src="static/Twitter.svg" alt="twitter icons">
+                        Sign in with Twitter
+                    </button>
+                    <a href="#" class="btn btn-secondary">
+                        Learn more <span>-></span>
+                    </a>
+                    <div class="avatar-container">
+                        <span class="avatar-image"><img src="static/userAvatar01.svg" alt="avatar image 1"></span>
+                        <span class="avatar-image"><img src="static/userAvatar02.svg" alt="user avatar 2"></span>
+                        <span class="avatar-image"><img src="static/userAvatar03.svg" alt="avtar image 3"></span>
+                        <span class="avatar-image"><img src="static/userAvatar04.svg" alt="avatar image 4"></span>
+                        <span class="avatar-image"><img src="static/userAvatar05.svg" alt="user avatar 5"></span>
+                        <span class="avatar-image"><img src="static/userAvatar06.svg" alt="user avatar 6"></span>
+                        <span class="avatar-image"><img src="static/userAvatar07.svg" alt="user avatar 7"></span>
+                        <span class="avatar-image"><img src="static/userAvatar08.svg" alt="avatar image 8"></span>
+                        <span class="avatar-image"><img src="static/userAvatar09.svg" alt="user avatar 9"></span>
+                    </div>
+                    <p>Join <em>195</em> others who have analyzed their followers and <br> scheduled <em>1342</em>
+                        tweets!</p>
+                </article>
+                <div id="hero-img">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="static/hero-image-tablet.png">
+                        <img src="static/hero-image-desktop.png" alt="Statics of a person's twitter account">
+                    </picture>
+                </div>
+            </section>
+        </div>
+        <section id="features">
+            <h2 class="section-header">Features that help you <br> Tweet smarter.</h2>
+            <div class="grid-container">
+                <article class="feature-card">
+                    <div class="emoji-container">💹</div>
+                    <h3 class="feature-header">Analytics</h3>
+                    <p class="feature-content">
+                        We constantly monitor your audience as it grows — so you can tweet when your followers are
+                        most likely to be online and ready to engage with your content.
+                    </p>
+                </article>
+                <article class="feature-card">
+                    <div class="emoji-container">🤓</div>
+                    <h3 class="feature-header">Smart Analyzer</h3>
+                    <p class="feature-content">
+                        Chirp automatically recognizes your followers' most active times and automatically sends you
+                        notifications if you're missing out on an opportunity.
+                    </p>
+                </article>
+                <article class="feature-card">
+                    <div class="emoji-container">
+                        🗞️
+                    </div>
+                    <h3 class="feature-header">Schedule Your Tweets</h3>
+                    <p class="feature-content">
+                        Quality tweets drive tons of engagement. With Chirp, you can write tweets in an advance and
+                        schedule them when your audience is most likely to read.
+                    </p>
+                </article>
+                <article class="feature-card">
+                    <div class="emoji-container">☀️</div>
+                    <h3 class="feature-header">
+                        Dark Mode
+                    </h3>
+                    <p class="feature-content">
+                        Friendly on the eyes, no matter what time you write your Tweets. All colors are chosen to
+                        make sure your eyes are at ease at all times.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="testimonies">
+            <h2 class="section-header">What our customers say</h2>
+            <div class="testimony-tweets">
+                <article class="tweet-card">
+                    <div class="tweet-header">
+                        <img src="static/userAvatar03.svg" alt="profile pic">
+                        <div class="tweet-user">
+                            <h4>Sara May</h4>
+                            <p>@sara_may</p>
+                        </div>
+                        <div class="twitter-icon">
+                            <img src="static/Twitter-blue.svg" alt="twitter icon">
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <p>I just tried our @chirp and it's amazing, love all the analytics I can see.</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="like-count">
+                            <img src="static/Like.svg" alt="likes">
+                            <p>2</p>
+                        </div>
+                        <div class="tweeted-date">
+                            March 2, 2021
+                        </div>
+                    </div>
+                </article>
+                <article class="tweet-card">
+                    <div class="tweet-header">
+                        <img src="static/userAvatar04.svg" alt="profile pic">
+                        <div class="tweet-user">
+                            <h4>Jack Scott</h4>
+                            <p>@jackscott_</p>
+                        </div>
+                        <div class="twitter-icon">
+                            <img src="static/Twitter-blue.svg" alt="twitter icon">
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <p>I initially started using Chirp to support the co-founder as I personally knew him, but after
+                            having tried it out for a few weeks, I can genuinely say this changed my Twitter game.</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="like-count">
+                            <img src="static/Like.svg" alt="likes">
+                            <p>32</p>
+                        </div>
+                        <div class="tweeted-date">
+                            March 2, 2021
+                        </div>
+                    </div>
+                </article>
+                <article class="tweet-card">
+                    <div class="tweet-header">
+                        <img src="static/userAvatar01.svg" alt="profile pic">
+                        <div class="tweet-user">
+                            <h4>Jessica May</h4>
+                            <p>@jmay98</p>
+                        </div>
+                        <div class="twitter-icon">
+                            <img src="static/Twitter-blue.svg" alt="twitter icon">
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <p>Absolutely love everything about Chirp, from the design to how everything works smoothly.</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="like-count">
+                            <img src="static/Like.svg" alt="likes">
+                            <p>221</p>
+                        </div>
+                        <div class="tweeted-date">
+                            March 2, 2021
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="pricing">
+            <h2 class="section-header">
+                One simple price plan.
+            </h2>
+            <p>Start growing your Twitter account by analyzing your follower's patterns.</p>
+            <article class="price-card">
+                <div class="price-frequency">Monthly</div>
+                <div class="price-amount"><span class="price">$9</span>/mo</div>
+                <div class="divider"></div>
+                <ul>
+                    <li>Unlimited* scheduled tweets and threads.</li>
+                    <li>Schedule up to 3 weeks in advance.</li>
+                    <li>Real-time audience analytics tracking up 5k followers.</li>
+                </ul>
+                <div class="divider"></div>
+                <button class="btn btn-twitter">Start Trial with Twitter</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a href="#" class="logo">
+            Chirp.
+        </a>
+        <img src="static/Twitter-black.svg" alt="twitter icons">
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+    </footer>
+
+    <!-- Include JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
