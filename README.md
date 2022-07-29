@@ -1,3 +1,3 @@
 # Chirp-Website-Practice
 
-Practice website.
+Live URL: https://sage-sprinkles-e101ef.netlify.app/
